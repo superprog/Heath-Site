@@ -1,0 +1,141 @@
+.container{
+
+
+  display:  flex;
+  flex-direction: column;
+
+
+  align-items: center;
+  gap:80%;
+
+
+}
+/*.container h1{
+  display: inline flex;
+  align-items: center;
+}*/
+.internal{
+     display: flex;
+    flex-direction: column;
+    width:20%;
+    column-gap:10%;
+
+    justify-content: center;
+    margin: auto;
+   
+    
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  gap:20%;
+  
+  width:100%;
+  justify-content: center;
+  text-decoration: none;
+ 
+}
+nav a{
+  display: inline flex;
+  justify-content: space-around;
+  gap:20%
+}
+nav a:link{
+
+  text-decoration: none;
+}
+
+body{
+  background-image: linear-gradient(to right, rgba(0,0,255,0.5), rgba(255,0,0,0.8));
+}
+.cal{
+  margin: 2px;
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: darkcyan;
+
+}
+.img{
+  display:flex;
+  justify-content: center;
+}
+#conclusion{
+    font-size: 20px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    font-weight: bold;
+}
+
+.clockDiv{
+  display: flex;
+  color:blue;
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  align-items: center;
+  align-content: center;
+}
+#countdown{
+    text-align: center;
+}
+#display{
+  text-align: center;
+}
+@keyframes pulse {
+  0% { box-shadow:0 0 2px #990f02, inset 0 0 18px #990f02; }
+  50% { box-shadow:0 0 2px #990f02, inset 0 0 14px #990f02; }
+  100% { box-shadow:0 0 2px #990f02, inset 0 0 8px #990f02; }
+}
+.clockDiv {
+  background-color:transparent;
+  width:150px;
+  height:150px;
+  border-radius:70px;
+  box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+ animation: pulse 1s linear 1s infinite;
+}
+.inner #display {
+  display:block;
+  text-align: center;
+  line-height: 100px;
+  font-family:sans-serif;
+  font-weight:100;
+  font-size:24px;
+  color: #ea4c89;
+  text-shadow: 0 0 4px #ea4c89;
+}
+.pulseDiv{
+  display: flex;
+  color:maroon;
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#litdiv{
+  position: relative;
+  
+  
+}
+#litdiv img{
+  position: absolute;
+  top:10%;
+  left:10%;
+
+  height: 90%;
+  width: 90%;
+}
+#litdiv p{
+  position: absolute;
+  background-color: lightblue;
+  top:50%;
+  left:30%
+  
+}
+.dark-mode {
+  background-image: linear-gradient(to right,rgba(6, 6, 66, 0.192), rgba(17, 15, 29, 0.8));
+  color: white;
+}
